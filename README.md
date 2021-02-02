@@ -8,6 +8,19 @@ Then, at every x minutes will ask innkeeper for the modified routes and update i
 
 [![Build Status](https://travis-ci.org/zalando/innkeeper.svg)](https://travis-ci.org/zalando/innkeeper)
 
+## prerequisites
+  * java 1.8
+  * sbt
+
+## build project
+  * cp src/main/resources/sample.application.conf src/main/resources/application.conf
+  * sbt scapegoat
+  * sbt assembly
+  * make
+## start using docker-compose
+  * docker-compose build
+  * docker-compose up -d
+
 ## Getting started
 
 First, create your application.conf file. One way to do it is by using the sample one:
